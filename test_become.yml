@@ -4,3 +4,7 @@
   tasks:
     - name: do a task only root can do
       shell: ls /root
+      register: output
+    - name: show contents
+      debug:
+        var: output
