@@ -1,0 +1,6 @@
+---
+- name: Test become functionality
+  hosts: all
+  tasks:
+    - name: do a task only root can do
+      shell: ls /root
