@@ -1,0 +1,7 @@
+---
+- name: test debug playbook
+  hosts: all
+  tasks:
+    - name: Oh hi there
+      debug:
+        msg: "You're tearing me apart Lisa"
