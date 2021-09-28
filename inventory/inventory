@@ -1,0 +1,14 @@
+[web]
+ansible1 ih1=ih1 ih2=ih2 ansible_host=10.200.202.34 ansible_ssh_private_key_file=/home/ansible/.ssh/id_ansible1_rsa
+
+[db]
+ansible2 ih1=ih1 ih2=ih2
+
+[app:children]
+web
+db
+
+[app:vars]
+ig1=ig1
+ig2=ig2
+
